@@ -1,0 +1,89 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "Hello", "Good day", "Greetings", "Howdy", "Hi there", "Hey there", "Hello there", "Good morning", "Good afternoon", "Hi Sam", "Hey bot", "Hello AI", "Greetings Sam"],
+      "responses": ["Great! Can you please provide your information?", "Hello! Please provide your information, are you willing?", "Hey! Let's start with your personal information, are you willing?"]
+    },
+    {
+      "tag": "info",
+      "patterns": ["Yes", "I'm okay", "yes, why not", "Sure", "yes", "Alright", "Absolutely", "Of course", "Definitely", "Why not", "I'm willing", "Go ahead", "Proceed", "Let's do it", "Ready", "Yes, I am willing"],
+      "responses": ["Great! Can you please provide your name?", "Thank you! Please enter your name.", "That's wonderful! Let's start with your name."]
+    },
+    {
+      "tag": "name",
+      "patterns": ["Sure,My name is","My name is", "Sure I am", "I am","Yes, I am", "You can call me", "This is", "I'm", "It's", "I go by", "Myself", "My full name is", "You can refer to me as", "I prefer to be called", "Call me", "I would like to be called", "Please call me"],
+      "responses": ["Great {name}, now please provide your email.", "Thanks {name}! Next, could you share your email address?"]
+    },
+    {
+      "tag": "email",
+      "patterns": ["My email is", "Email:", "Email is", "Sure, email is", "Sure, it's", "Here is my email", "You can contact me at", "Reach me at", "My email address is", "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}", "I can be reached at", "My email ID is", "Use this email", "Contact me via", "Send emails to", "Mail me at", "Reach out at"],
+      "responses": ["Thank you {name}, please provide your phone number.", "Got it, {name}! Can you also share your phone number?", "Thanks {name}! We also need your phone number."]
+    },
+    {
+      "tag": "phone",
+      "patterns": ["My phone number is", "Phone:", "Phone number is", "Contact number is", "My number is", "You can call me at", "Reach me at", "Contact me at", "1234567890", "9876543210", "1234", "5678", "123-456-7890", "123.456.7890", "(123) 456-7890", "You can reach me at", "My contact number is", "Ring me at", "Phone contact is", "You can dial", "Call at", "Please call"],
+      "responses": ["Thanks {name}, next, please provide your address.", "Got your number, {name}! Now, could you provide your address?"]
+    },
+    {
+      "tag": "address",
+      "patterns": ["My address is", "Address:", "Location is", "You can find me at", "My residence is", "I live at", "My location is", "You can locate me at", "Mailing address is", "You can reach me at", "My home is at", "Send mail to", "I'm residing at", "I stay at", "House address is"],
+      "responses": ["Thank you, {name}! What service are you interested in?", "Got it, {name}! Now, could you tell me which service you are looking for?"]
+    },
+    {
+      "tag": "service",
+      "patterns": ["I need", "I want", "Can I get", "I'd like", "Service:", "I am looking for", "I require", "I'm interested in", "Can you provide", "I would like", "Requesting", "In need of", "Could you offer", "Can you assist with", "Looking for", "Seeking", "Needing", "Interested in", "I need a", "I want to avail"],
+      "responses": ["Great choice! What specific features are you looking for in {service}?", "Thank you! Please specify the features you need for {service}."]
+    },
+    {
+      "tag": "features",
+      "patterns": ["I need features", "Features:", "I'd like features", "Can you include", "I'd need", "I require", "Please include", "I'm looking for", "I want", "Could you add", "Looking for features", "Needing features", "Interested in features", "Requesting features", "Could you provide features", "I'd like to have", "I am looking for"],
+      "responses": ["Understood. What is the time limit for completing {service}? (Please note that the minimum time is 3 days)", "Got it. How much time can you give us to complete {service}? (Minimum is 3 days)"]
+    },
+    {
+      "tag": "time_limit",
+      "patterns": ["Time limit is", "I need it in", "Can you complete in", "I'd like it done in", "The deadline is", "I can give you", "You have", "I expect it in", "Complete it within", "The time frame is", "The due date is", "Finish it by", "Completion time is", "Allowing you", "The duration is", "Please complete by", "End date is", "Complete within"],
+      "responses": ["Thank you! We will ensure to complete the within the given time. Anything else you need?", "Got it! We will work on {service} and make sure to deliver within the timeframe. Is there anything else you would like to add?"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!", "I appreciate it", "Much appreciated", "Thank you very much", "Thanks a bunch", "Grateful", "Thanks for your help", "Thank you kindly", "I'm grateful", "Thanks a ton", "Thanks so much", "Appreciate it", "Big thanks", "Many thanks"],
+      "responses": ["You're welcome!", "Happy to assist!", "Anytime!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Have a nice day", "Catch you later", "Talk to you later", "See you", "Farewell", "Later", "Bye bye", "Good night", "See ya", "Cya", "Take it easy", "Be well"],
+      "responses": ["Goodbye! If you need further assistance, feel free to ask.", "Take care and have a great day!", "See you later!"]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["", "No", "I don't want to provide that", "I'm not comfortable sharing that", "Not now", "Maybe later", "I don't think so", "I don't want to", "I prefer not to", "I'm not sure", "Not interested", "Not willing", "Don't want to", "Nope", "No way", "Not ready", "Not keen", "Not comfortable"],
+      "responses": ["No problem. If you change your mind, I'm here to help.", "Alright, let me know if there's anything else you'd like to know.", "Understood. Feel free to reach out whenever you're ready."]
+    },
+    {
+      "tag": "confused",
+      "patterns": ["I don't understand", "What do you mean?", "Can you clarify?", "I'm confused", "Not sure what you mean", "Could you explain that?", "I didn't get that", "Could you repeat that?", "Could you clarify?", "Can you explain?", "Not clear", "Could you restate?", "Unclear", "I don't get it", "Elaborate please", "Say again?"],
+      "responses": ["I'm here to help. Could you please rephrase or ask another question?", "I'm sorry if that was unclear. Could you provide more details?", "Let me try again. What information are you looking for?"]
+    },
+    {
+      "tag": "wrong_name",
+      "patterns": ["That's not my name", "You got my name wrong", "I didn't say that", "My name is not", "You misheard my name", "Incorrect name", "Wrong name", "You got it wrong", "That's incorrect", "Not my name", "You got the name wrong", "It's not my name", "That's not correct", "Mistaken name", "Incorrectly heard"],
+      "responses": ["I'm sorry about that. Could you please tell me your name again?", "I apologize for the mistake. What's your correct name?", "Let's fix that. What is your name?"]
+    },
+    {
+      "tag": "wrong_email",
+      "patterns": ["That's not my email", "You got my email wrong", "I didn't say that email", "My email is not", "You misheard my email", "Incorrect email", "Wrong email", "You got it wrong", "That's incorrect", "Not my email", "You got the email wrong", "It's not my email", "That's not correct", "Mistaken email", "Incorrectly heard"],
+      "responses": ["I apologize for the mistake. Could you please provide your correct email?", "Sorry about that. What's your correct email address?", "Let's correct that. What's your email?"]
+    },
+    {
+      "tag": "wrong_phone",
+      "patterns": ["That's not my phone number", "You got my number wrong", "I didn't say that number", "My number is not", "You misheard my number", "Incorrect number", "Wrong number", "You got it wrong", "That's incorrect", "Not my number", "You got the number wrong", "It's not my number", "That's not correct", "Mistaken number", "Incorrectly heard"],
+      "responses": ["I'm sorry for the error. Could you please provide your correct phone number?", "Apologies for that. What's your correct phone number?", "Let's correct that. What's your phone number?"]
+    },
+    {
+      "tag": "wrong_address",
+      "patterns": ["That's not my address", "You got my address wrong", "I didn't say that address", "My address is not", "You misheard my address", "Incorrect address", "Wrong address", "You got it wrong", "That's incorrect", "Not my address", "You got the address wrong", "It's not my address", "That's not correct", "Mistaken address", "Incorrectly heard"],
+      "responses": ["I apologize for the mistake. Could you please provide your correct address?", "Sorry about that. What's your correct address?", "Let's correct that. What's your address?"]
+    }
+  ]
+}
